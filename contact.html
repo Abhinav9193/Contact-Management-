@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Management</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Contact Management</h1>
+
+        <!-- Add Contact Form -->
+        <div class="form-container">
+            <h2>Add Contact</h2>
+            <input type="text" id="username" placeholder="Enter Username">
+            <input type="email" id="email" placeholder="Enter Email">
+            <input type="number" id="contactNo" placeholder="Enter Contact Number">
+            <button onclick="addContact()">Add Contact</button>
+        </div>
+
+        <!-- Search Contact -->
+        <div class="form-container">
+            <h2>Search Contact</h2>
+            <input type="text" id="searchUsername" placeholder="Search by Username">
+            <button onclick="searchContact()">Search</button>
+            <p id="searchResult"></p>
+        </div>
+
+        <!-- View All Contacts -->
+        <button id="viewContactsBtn" onclick="toggleContacts()">View All Contacts</button>
+        <div id="contactsContainer" class="hidden">
+            <h2>All Contacts</h2>
+            <ul id="contactsList"></ul>
+        </div>
+
+        <!-- Delete Contact by ID -->
+        <div class="form-container">
+            <h2>Delete Contact</h2>
+            <input type="number" id="deleteId" placeholder="Enter ID to delete">
+            <button onclick="deleteById()">Delete</button>
+        </div>
+    </div>
+
+    <script src="contact.js"></script>
+</body>
+</html>
+

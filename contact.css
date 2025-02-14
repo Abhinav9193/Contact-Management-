@@ -1,0 +1,121 @@
+/* Dark Theme Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #121212;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container Box */
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: rgba(30, 30, 30, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+/* Headings */
+h1 {
+    color: #00c9ff;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2 {
+    color: #ffd700;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* Form Boxes */
+.form-container {
+    margin: 20px 0;
+    padding: 15px;
+    background: rgba(50, 50, 50, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Input Fields */
+input {
+    width: 90%;
+    padding: 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 6px;
+    background: #222;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    outline: none;
+}
+
+/* Input Focus */
+input:focus {
+    border: 2px solid #00c9ff;
+    background: #333;
+}
+
+/* Buttons */
+button {
+    padding: 12px 18px;
+    background: linear-gradient(to right, #ff2b2b, #ff9900);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(to right, #00c9ff, #00ff7f);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+}
+
+/* Contacts List */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px;
+    margin: 5px 0;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Delete Button */
+.delete-btn {
+    background: red;
+    padding: 6px 12px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.delete-btn:hover {
+    background: darkred;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+}
+
+/* Hide Contacts Initially */
+.hidden {
+    display: none;
+}
